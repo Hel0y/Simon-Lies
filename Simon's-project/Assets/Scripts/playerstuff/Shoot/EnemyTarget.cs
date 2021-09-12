@@ -26,12 +26,12 @@ private void Awake() {
   
   void Morte(){
 spw.activeEnemies --;
-quantenemy.deadEnemies ++;
 if (quantenemy.deadEnemies % 5 == 0)
 {
   Instantiate(PU_tiro, transform.position, Quaternion.identity);
 }
 particula.Play();
+quantenemy.deadEnemies ++;
 Destroy(gameObject);    
   }
 }
