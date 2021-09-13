@@ -5,7 +5,7 @@ using UnityEngine;
 public class MouseCam : MonoBehaviour
 {
      [SerializeField]
-    private float MouseSensitivity = 150f;
+    private float MouseSensitivity;
     public Transform playerBody;
     public GameObject player;
     float xRotation = 0f;
